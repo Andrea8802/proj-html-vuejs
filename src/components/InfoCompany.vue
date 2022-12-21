@@ -41,7 +41,7 @@ section {
     height: $height-header;
     width: 100%;
     font-size: 12px;
-    color: lightgray;
+    color: $text-color;
 
     .container {
         @include d-flex(between, center);

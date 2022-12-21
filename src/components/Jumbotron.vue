@@ -1,6 +1,13 @@
 <script>
+import TopJumbotron from '../components/TopJumbotron.vue'
+import MiddleJumbotron from '../components/MiddleJumbotron.vue'
+
 export default {
-    name: "Jumbotron"
+    name: "Jumbotron",
+    components: {
+        TopJumbotron,
+        MiddleJumbotron
+    }
 }
 </script>
 
@@ -8,21 +15,10 @@ export default {
     <section>
         <div class="background">
             <div class="container">
-                <div class="logo-nav">
-                    <img src="../assets/img/logo.svg" alt="Logo">
-                    <nav>
-                        <ul>
-                            <li>A</li>
-                            <li>A</li>
-                            <li>A</li>
-                            <li>A</li>
-                            <li>A</li>
-                            <li>A</li>
-                            <li>A</li>
-                        </ul>
-                    </nav>
-                </div>
+                <TopJumbotron />
+                <MiddleJumbotron />
             </div>
+
         </div>
     </section>
 </template>
@@ -40,22 +36,6 @@ section {
         background-color: rgba($color: black, $alpha: 0.4);
         height: 100%;
         width: 100%;
-
-        .logo-nav {
-            width: 100%;
-
-            @include d-flex(between, center);
-
-            img {
-                width: 100px;
-            }
-
-            ul {
-                list-style: none;
-                @include d-flex(evenly, center);
-                gap: 30px;
-            }
-        }
     }
 
 

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
+@import './partials/variables';
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,4 +16,20 @@ body {
     height: 100%;
     width: 60%;
     margin: auto;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 11px 20px;
+    border-radius: 3px;
+}
+
+.button.solid {
+    background-color: $primary-color;
+}
+
+.button.trasparent {
+    border: 1px solid $primary-color;
 }
