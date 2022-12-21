@@ -8,7 +8,7 @@ export default {
 <template>
 
     <div class="card">
-        <img src="../assets/img/project-1.jpg" alt="image project 1">
+        <img src="../../../assets/img/project-1.jpg" alt="image project 1">
 
         <div class="text">
             Academic professional program in social media
@@ -16,7 +16,7 @@ export default {
     </div>
 
     <div class="card">
-        <img src="../assets/img/project-2.jpg" alt="image project 2">
+        <img src="../../../assets/img/project-2.jpg" alt="image project 2">
 
         <div class="text">
             Academic professional program in social media
@@ -24,7 +24,7 @@ export default {
     </div>
 
     <div class="card">
-        <img src="../assets/img/project-3.jpg" alt="image project 3">
+        <img src="../../../assets/img/project-3.jpg" alt="image project 3">
 
         <div class="text">
             Academic professional program in social media
@@ -32,7 +32,7 @@ export default {
     </div>
 
     <div class="card">
-        <img src="../assets/img/project-4.jpg" alt="image project 4">
+        <img src="../../../assets/img/project-4.jpg" alt="image project 4">
 
         <div class="text">
             Academic professional program in social media
@@ -40,7 +40,7 @@ export default {
     </div>
 
     <div class="card">
-        <img src="../assets/img/project-5.jpg" alt="image project 5">
+        <img src="../../../assets/img/project-5.jpg" alt="image project 5">
 
         <div class="text">
             Academic professional program in social media
@@ -48,7 +48,7 @@ export default {
     </div>
 
     <div class="card">
-        <img src="../assets/img/project-6.jpg" alt="image project 6">
+        <img src="../../../assets/img/project-6.jpg" alt="image project 6">
 
         <div class="text">
             Academic professional program in social media
@@ -58,8 +58,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/variables' as *;
-@use '../styles/partials/mixins' as *;
+@use '../../../styles/partials/variables' as *;
+@use '../../../styles/partials/mixins' as *;
 
 .card {
     height: 280px;

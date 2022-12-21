@@ -1,7 +1,7 @@
 <script>
-import FeaturesCards from './FeaturesCards.vue';
-import About from './About.vue';
-import Actions from './Actions.vue';
+import FeaturesCards from './Main/FeaturesCards.vue';
+import About from './Main/About/About.vue';
+import Actions from './Main/Actions/Actions.vue';
 
 export default {
     name: "AppMain",

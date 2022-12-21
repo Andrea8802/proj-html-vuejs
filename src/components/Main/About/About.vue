@@ -49,8 +49,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/variables' as *;
-@use '../styles/partials/mixins' as *;
+@use '../../../styles/partials/variables' as *;
+@use '../../../styles/partials/mixins' as *;
 
 
 .left {
@@ -97,7 +97,7 @@ export default {
 .right {
     width: 50%;
     height: 100%;
-    background-image: url("../assets/img/about-5.jpg");
+    background-image: url("../../../assets/img/about-5.jpg");
     background-size: cover;
     background-position: center;
 }
