@@ -1,12 +1,14 @@
 <script>
 import FeaturesCards from './FeaturesCards.vue';
 import About from './About.vue';
+import Actions from './Actions.vue';
 
 export default {
     name: "AppMain",
     components: {
         FeaturesCards,
-        About
+        About,
+        Actions
     }
 }
 </script>
@@ -19,6 +21,10 @@ export default {
 
         <section class="about">
             <About />
+        </section>
+
+        <section class="actions">
+            <Actions />
         </section>
     </main>
 </template>
@@ -40,7 +46,14 @@ main {
         @include d-flex(center, center);
         height: 620px;
         width: 100%;
+    }
 
+    .actions {
+        @include d-flex(center, center);
+        flex-direction: column;
+        background-color: $bg-black;
+        height: 1000px;
+        width: 100%;
     }
 }
 </style>
