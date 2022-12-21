@@ -6,7 +6,7 @@ export default {
 
 <template>
     <div class="top">
-        <img src="../assets/img/logo.svg" alt="Logo">
+        <img src="../../assets/img/logo.svg" alt="Logo">
         <nav>
             <ul>
                 <li>A</li>
@@ -22,8 +22,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/variables' as *;
-@use '../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
 
 .background {
     background-color: rgba($color: black, $alpha: 0.4);
@@ -33,7 +33,7 @@ export default {
     .top {
         width: 100%;
         padding-top: 20px;
-        @include d-flex(between, center);
+        @include d-flex(space-between, center);
 
         img {
             width: 110px;
@@ -41,7 +41,7 @@ export default {
 
         ul {
             list-style: none;
-            @include d-flex(evenly, center);
+            @include d-flex(space-evenly, center);
             gap: 30px;
             color: white;
             font-weight: bold;

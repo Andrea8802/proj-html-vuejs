@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "FeaturesCard"
+    name: "FeaturesCards"
 }
 </script>
 
@@ -54,7 +54,7 @@ export default {
     padding: 30px;
 
     .icon {
-        background-color: #daeced;
+        background-color: $light-primary-color;
         color: $primary-color;
         border-radius: 50%;
         display: inline-block;
@@ -66,7 +66,7 @@ export default {
 
     h3 {
         font-size: 20px;
-        color: #202427;
+        color: $dark-text-color;
         margin: 20px 0;
     }
 

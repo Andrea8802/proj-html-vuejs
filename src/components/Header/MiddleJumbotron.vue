@@ -33,19 +33,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/variables' as *;
-@use '../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
 
 .middle {
     height: 80%;
 
-    @include d-flex(start, center);
-
-    .blue-text {
-        color: $primary-color;
-        font-size: 14px;
-        font-weight: bold;
-    }
+    @include d-flex(flex-start, center);
 
     h2 {
         color: white;
@@ -56,7 +50,7 @@ export default {
         z-index: 10;
 
         .block {
-            background-color: #115353;
+            background-color: $dark-primary-color;
             width: 105%;
             height: 30px;
             position: absolute;
@@ -67,7 +61,7 @@ export default {
     }
 
     p {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 20px;
         width: 60%;
         margin: 20px 0 40px;

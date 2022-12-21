@@ -1,6 +1,6 @@
 <script>
-import InfoCompany from './components/InfoCompany.vue'
-import Jumbotron from './components/Jumbotron.vue'
+import InfoCompany from './components/Header/InfoCompany.vue'
+import Jumbotron from './components/Header/Jumbotron.vue'
 import AppMain from './components/AppMain.vue'
 
 export default {

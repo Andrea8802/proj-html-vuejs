@@ -18,6 +18,12 @@ body {
     margin: auto;
 }
 
+.blue-text {
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 .button {
     text-decoration: none;
     color: white;
@@ -32,4 +38,13 @@ body {
 
 .button.trasparent {
     border: 1px solid $primary-color;
+}
+
+.bg-title {
+    background-color: $light-primary-color;
+    color: $primary-color;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 40px;
 }

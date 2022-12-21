@@ -33,26 +33,26 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/mixins' as *;
-@use '../styles/partials/variables' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
 
 section {
     background-color: #21333e;
     height: $height-header;
     width: 100%;
     font-size: 12px;
-    color: $text-color;
+    color: $light-text-color;
 
     .container {
-        @include d-flex(between, center);
+        @include d-flex(space-between, center);
     }
 
     .info {
-        @include d-flex(evenly, center);
+        @include d-flex(space-evenly, center);
         gap: 15px;
 
         .social {
-            @include d-flex(evenly, center);
+            @include d-flex(space-evenly, center);
             gap: 30px;
         }
     }

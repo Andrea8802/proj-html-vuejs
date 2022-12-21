@@ -1,29 +1,6 @@
 @mixin d-flex ($justify-type, $align-type) {
+
     display: flex;
-    flex-wrap: wrap;
-
-    @if $justify-type =="center" {
-        justify-content: center;
-    }
-
-    @else if $justify-type =="between" {
-        justify-content: space-between;
-    }
-
-    @else if $justify-type =="evenly" {
-        justify-content: space-evenly;
-    }
-
-    @if $align-type =="start" {
-        align-items: flex-start;
-    }
-
-    @else if $align-type =="center" {
-        align-items: center;
-    }
-
-    @else if $align-type =="end" {
-        align-items: flex-end;
-    }
-
+    justify-content: $justify-type;
+    align-items: $align-type;
 }

@@ -1,0 +1,84 @@
+<script>
+export default {
+    name: "AboutNumbers",
+}
+</script>
+
+<template>
+    <div class="numbers">
+        <div class="card">
+            <div class="number">
+                0
+            </div>
+
+            <h3>
+                Emplyees
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="number">
+                0
+            </div>
+
+            <h3>
+                Partners
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="number">
+                0
+            </div>
+
+            <h3>
+                Customers
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </div>
+</template>
+
+<style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
+
+
+.numbers {
+    @include d-flex(center, center);
+    flex-direction: row;
+    text-align: center;
+    margin: 30px 0 50px;
+
+    .card {
+
+        .number {
+            color: #01a5a6;
+            font-weight: bold;
+            font-size: 30px;
+            margin-right: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: $dark-text-color;
+            margin: 10px 0;
+        }
+
+        p {
+            color: $text-color;
+            text-align: left;
+            font-size: 14px;
+            padding: 0 20px;
+        }
+    }
+}
+</style>

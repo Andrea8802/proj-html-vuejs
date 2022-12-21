@@ -1,27 +1,46 @@
 <script>
-import FeaturesCard from './FeaturesCard.vue';
+import FeaturesCards from './FeaturesCards.vue';
+import About from './About.vue';
+
 export default {
     name: "AppMain",
     components: {
-        FeaturesCard
+        FeaturesCards,
+        About
     }
 }
 </script>
 
 <template>
-    <section class="features">
-        <FeaturesCard />
-    </section>
+    <main>
+        <section class="features">
+            <FeaturesCards />
+        </section>
+
+        <section class="about">
+            <About />
+        </section>
+    </main>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 
-.features {
-    height: 480px;
-    background-color: $bg-gray;
-    @include d-flex(center, center);
-    gap: 25px
+main {
+    .features {
+        @include d-flex(center, center);
+        height: 480px;
+        widows: 100%;
+        background-color: $bg-gray;
+        gap: 25px
+    }
+
+    .about {
+        @include d-flex(center, center);
+        height: 620px;
+        width: 100%;
+
+    }
 }
 </style>

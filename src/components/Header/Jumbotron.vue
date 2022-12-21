@@ -1,6 +1,6 @@
 <script>
-import TopJumbotron from '../components/TopJumbotron.vue'
-import MiddleJumbotron from '../components/MiddleJumbotron.vue'
+import TopJumbotron from './TopJumbotron.vue'
+import MiddleJumbotron from './MiddleJumbotron.vue'
 
 export default {
     name: "Jumbotron",
@@ -24,11 +24,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/variables' as *;
-@use '../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
 
 section {
-    background-image: url("../assets/img/bg-4.jpg");
+    background-image: url("../../assets/img/bg-4.jpg");
     height: calc(100vh - $height-header);
     background-size: cover;
 
