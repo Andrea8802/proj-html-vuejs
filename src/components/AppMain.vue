@@ -1,14 +1,16 @@
 <script>
 import FeaturesCards from './Main/FeaturesCards.vue';
-import About from './Main/About/About.vue';
-import Actions from './Main/Actions/Actions.vue';
+import About from './Main/About Section/About.vue';
+import Actions from './Main/Actions Section/Actions.vue';
+import Process from './Main/Process.vue';
 
 export default {
     name: "AppMain",
     components: {
         FeaturesCards,
         About,
-        Actions
+        Actions,
+        Process
     }
 }
 </script>
@@ -25,6 +27,10 @@ export default {
 
         <section class="actions">
             <Actions />
+        </section>
+
+        <section class="process">
+            <Process />
         </section>
     </main>
 </template>
@@ -52,7 +58,14 @@ main {
         @include d-flex(center, center);
         flex-direction: column;
         background-color: $bg-black;
-        height: 1000px;
+        height: 1100px;
+        width: 100%;
+    }
+
+    .process {
+        @include d-flex(center, center);
+        flex-direction: column;
+        height: 580px;
         width: 100%;
     }
 }
