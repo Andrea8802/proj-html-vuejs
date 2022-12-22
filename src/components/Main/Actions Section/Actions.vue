@@ -4,6 +4,53 @@ export default {
     name: "Actions",
     components: {
         ActionCards
+    },
+
+    data() {
+        return {
+            category: [
+                {
+                    name: "ALL",
+                    active: true
+                },
+
+                {
+                    name: "INSTITUTIONAL",
+                    active: false
+                },
+
+                {
+                    name: "SOCIAL",
+                    active: false
+                },
+
+                {
+                    name: "EVENTS",
+                    active: false
+                },
+
+                {
+                    name: "INNOVATION",
+                    active: false
+                },
+
+                {
+                    name: "ENVIROMENT",
+                    active: false
+                },
+
+                {
+                    name: "TECHNOLOGY",
+                    active: false
+                }
+            ]
+        }
+    },
+    methods: {
+        itemClicked(item) {
+            this.category.forEach(element => element.active ? element.active = false : "")
+            item.active = true;
+        }
     }
 
 }
@@ -22,28 +69,9 @@ export default {
     </div>
 
     <ul>
-        <li>
-            B
-        </li>
-
-        <li>
-            B
-        </li>
-
-        <li>
-            B
-        </li>
-
-        <li>
-            B
-        </li>
-
-        <li>
-            B
-        </li>
-
-        <li>
-            B
+        <li v-for="(item, index) in category" :info="item" :key="index" :class="item.active ? 'item-selected' : ''"
+            @click="itemClicked(item)">
+            {{ item.name }}
         </li>
     </ul>
 
@@ -71,12 +99,25 @@ export default {
 
 ul {
     @include d-flex(space-evenly, center);
-    gap: 50px;
+    gap: 10px;
+}
+
+.item-selected {
+    background-color: $dark-bg-title;
+    text-decoration: underline;
 }
 
 li {
     list-style: none;
     color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+
+        background-color: $dark-bg-title;
+    }
 }
 
 .card-list {
