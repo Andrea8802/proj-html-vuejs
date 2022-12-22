@@ -1,22 +1,82 @@
 <script>
 export default {
-    name: "TopJumbotron"
+    name: "TopJumbotron",
+    data() {
+        return {
+            linkNav: [
+                {
+                    name: "HOME",
+                    link: "#",
+                    active: false
+                },
+
+                {
+                    name: "ABOUT",
+                    link: "#",
+                    active: false
+                },
+
+                {
+                    name: "PROJECTS",
+                    link: "#",
+                    active: false
+                },
+
+                {
+                    name: "PROCESS",
+                    link: "#",
+                    active: true
+                },
+
+                {
+                    name: "TESTIMONIALS",
+                    link: "#",
+                    active: false
+                },
+            ]
+        }
+    },
+    methods: {
+        itemClicked(item) {
+            this.linkNav.forEach(element => element.active ? element.active = false : "");
+            item.active = true;
+        }
+    }
 }
 </script>
 
 <template>
     <div class="top">
-        <img src="../../assets/img/logo.svg" alt="Logo">
+
+        <!-- Logo -->
+        <a href="#">
+            <img src="../../assets/img/logo.svg" alt="Logo">
+        </a>
+
+        <!-- Links nav -->
         <nav>
             <ul>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
+
+                <!-- Links -->
+                <li v-for="(item, index) in linkNav" :info="item" :key="index">
+                    <a :href="item.link" :class="item.active ? 'item-selected' : ''" @click="itemClicked(item)">
+                        {{ item.name }}
+                    </a>
+                </li>
+
+                <!-- Icona profilo -->
+                <li>
+                    <fa icon="fa-solid fa-user" class="profile" />
+                </li>
+
+                <!-- Bottone -->
+                <li>
+                    <a href="#" class="button solid">
+                        GET IN TOUCH
+                    </a>
+                </li>
             </ul>
+
         </nav>
     </div>
 </template>
@@ -45,7 +105,36 @@ export default {
             gap: 30px;
             color: white;
             font-weight: bold;
+
+            li {
+                font-size: 14px;
+            }
+
+            a {
+                color: white;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+            .item-selected {
+                color: $primary-color;
+                text-decoration: underline;
+
+            }
         }
+
+        .profile {
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
     }
 }
 </style>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @import './partials/variables';
 
@@ -9,7 +9,11 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -30,14 +34,25 @@ body {
     font-size: 13px;
     padding: 11px 20px;
     border-radius: 3px;
+    font-weight: bold;
 }
 
 .button.solid {
     background-color: $primary-color;
+
+    &:hover {
+        background-color: $dark-primary-color;
+        color: white !important;
+    }
 }
 
 .button.trasparent {
-    border: 1px solid $primary-color;
+    border: 2px solid $primary-color;
+
+    &:hover {
+        background-color: $primary-color;
+        color: white !important;
+    }
 }
 
 .bg-title {

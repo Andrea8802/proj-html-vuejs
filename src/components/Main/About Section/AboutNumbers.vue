@@ -8,7 +8,7 @@ export default {
     <div class="numbers">
         <div class="card">
             <div class="number">
-                0
+                {{ Math.floor(Math.random() * (150 - 50 + 1)) + 50 }}
             </div>
 
             <h3>
@@ -21,7 +21,8 @@ export default {
 
         <div class="card">
             <div class="number">
-                0
+                {{ Math.floor(Math.random() * (100 - 0 + 1)) + 0 }}
+
             </div>
 
             <h3>
@@ -34,7 +35,8 @@ export default {
 
         <div class="card">
             <div class="number">
-                0
+                {{ Math.floor(Math.random() * (200 - 100 + 1)) + 100 }}
+
             </div>
 
             <h3>

@@ -1,6 +1,4 @@
 <script>
-
-
 export default {
     name: "DownFooter"
 }
@@ -34,7 +32,7 @@ section {
 
     a {
         color: darkcyan;
+        text-decoration: underline;
     }
-
 }
 </style>

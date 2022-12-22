@@ -43,11 +43,11 @@ export default {
 
     h2 {
         color: white;
-        font-size: 50px;
-        font-family: 'Bowlby One', cursive;
+        font-size: 60px;
         width: 50%;
         position: relative;
         z-index: 10;
+        font-weight: 900;
 
         .block {
             background-color: $dark-primary-color;

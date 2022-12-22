@@ -7,6 +7,7 @@ export default {
 <template>
     <section>
         <div class="container">
+            <!-- Info azienda -->
             <div>
                 <fa icon="fa-solid fa-clock" />
                 Open Hours Man - Sat - 9:00 - 18:00
@@ -22,10 +23,11 @@ export default {
                     hello@example.com
                 </div>
 
+                <!-- Social -->
                 <div class="social">
-                    <fa icon="fa-brands fa-facebook-f" />
-                    <fa icon="fa-brands fa-twitter" />
-                    <fa icon="fa-brands fa-linkedin-in" />
+                    <fa icon="fa-brands fa-facebook-f" class="icon" />
+                    <fa icon="fa-brands fa-twitter" class="icon" />
+                    <fa icon="fa-brands fa-linkedin-in" class="icon" />
                 </div>
             </div>
         </div>
@@ -51,9 +53,19 @@ section {
         @include d-flex(space-evenly, center);
         gap: 15px;
 
+        & div:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
         .social {
             @include d-flex(space-evenly, center);
             gap: 30px;
+
+            & .icon:hover {
+                color: $primary-color;
+                cursor: pointer;
+            }
         }
     }
 }
