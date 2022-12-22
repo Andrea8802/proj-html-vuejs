@@ -1,59 +1,32 @@
 <script>
 export default {
-    name: "ActionsCards"
+    name: "ActionsCards",
+    data() {
+        return {
+            textCards: [
+                "Academic professional program in social media",
+                "President's speech at the annual meeting",
+                "International business trip in Shanghai",
+                "Technology workshop with education theme",
+                "Donation of clothes and food to the partner NGO",
+                "Confraternization of procurement team"
+            ]
+        }
+    }
 
 }
 </script>
 
 <template>
 
-    <div class="card">
-        <img src="../../../assets/img/project-1.jpg" alt="image project 1">
+    <div class="card" v-for="(text, index) in textCards" :info="text" :key="index">
+        <img :src="'src/assets/img/project-' + (index + 1) + '.jpg'" :alt="'image project ' + (index + 1)">
 
         <div class="text">
-            Academic professional program in social media
+            {{ text }}
         </div>
     </div>
 
-    <div class="card">
-        <img src="../../../assets/img/project-2.jpg" alt="image project 2">
-
-        <div class="text">
-            Academic professional program in social media
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../../../assets/img/project-3.jpg" alt="image project 3">
-
-        <div class="text">
-            Academic professional program in social media
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../../../assets/img/project-4.jpg" alt="image project 4">
-
-        <div class="text">
-            Academic professional program in social media
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../../../assets/img/project-5.jpg" alt="image project 5">
-
-        <div class="text">
-            Academic professional program in social media
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../../../assets/img/project-6.jpg" alt="image project 6">
-
-        <div class="text">
-            Academic professional program in social media
-        </div>
-    </div>
 
 </template>
 
