@@ -1,9 +1,14 @@
 <script>
-import TopFooter from './TopFooter.vue';
+import LeftTopFooter from './LeftTopFooter.vue'
+import RightTopFooter from './RightTopFooter.vue'
+import DownFooter from './DownFooter.vue'
+
 export default {
     name: "AppFooter",
     components: {
-        TopFooter
+        DownFooter,
+        LeftTopFooter,
+        RightTopFooter
     }
 }
 </script>
@@ -11,7 +16,12 @@ export default {
 <template>
 
     <footer>
-        <TopFooter />
+        <section class="top-footer">
+            <LeftTopFooter />
+            <RightTopFooter />
+        </section>
+
+        <DownFooter />
     </footer>
 
 </template>
@@ -19,4 +29,17 @@ export default {
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
+
+footer {
+    background-color: $bg-black;
+    width: 100%;
+
+    .top-footer {
+        @include d-flex(center, center);
+        gap: 50px;
+        height: 680px;
+        width: 85%;
+        margin: auto;
+    }
+}
 </style>
