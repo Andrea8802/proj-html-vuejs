@@ -65,7 +65,7 @@ export default {
 }
 
 .bg-title {
-    background-color: #0e272d;
+    background-color: $dark-bg-title;
     color: white;
 }
 

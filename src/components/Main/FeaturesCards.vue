@@ -52,6 +52,7 @@ export default {
     width: 280px;
     background-color: white;
     padding: 30px;
+    border-radius: 5px;
 
     .icon {
         background-color: $light-primary-color;

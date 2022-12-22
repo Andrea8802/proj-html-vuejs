@@ -1,14 +1,16 @@
 <script>
 import InfoCompany from './components/Header/InfoCompany.vue'
 import Jumbotron from './components/Header/Jumbotron.vue'
-import AppMain from './components/AppMain.vue'
+import AppMain from './components/Main/AppMain.vue'
+import AppFooter from './components/Footer/AppFooter.vue'
 
 export default {
   name: "App",
   components: {
     InfoCompany,
     Jumbotron,
-    AppMain
+    AppMain,
+    AppFooter
   }
 }
 </script>
@@ -20,6 +22,9 @@ export default {
   </header>
 
   <AppMain />
+
+  <AppFooter />
+
 </template>
 
 <style lang="scss">

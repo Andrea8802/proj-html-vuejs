@@ -1,8 +1,9 @@
 <script>
-import FeaturesCards from './Main/FeaturesCards.vue';
-import About from './Main/About Section/About.vue';
-import Actions from './Main/Actions Section/Actions.vue';
-import Process from './Main/Process.vue';
+import FeaturesCards from './FeaturesCards.vue';
+import About from './About Section/About.vue';
+import Actions from './Actions Section/Actions.vue';
+import Process from './Process.vue';
+import Feedback from './Feedback Section/Feedback.vue';
 
 export default {
     name: "AppMain",
@@ -10,7 +11,8 @@ export default {
         FeaturesCards,
         About,
         Actions,
-        Process
+        Process,
+        Feedback
     }
 }
 </script>
@@ -32,41 +34,50 @@ export default {
         <section class="process">
             <Process />
         </section>
+
+        <section class="feedback">
+            <Feedback />
+        </section>
     </main>
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/variables' as *;
-@use '../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
 
 main {
-    .features {
+    section {
         @include d-flex(center, center);
+        width: 100%;
+
+    }
+
+    .features {
         height: 480px;
-        widows: 100%;
         background-color: $bg-gray;
         gap: 25px
     }
 
     .about {
-        @include d-flex(center, center);
         height: 620px;
-        width: 100%;
     }
 
     .actions {
-        @include d-flex(center, center);
         flex-direction: column;
         background-color: $bg-black;
         height: 1100px;
-        width: 100%;
     }
 
     .process {
-        @include d-flex(center, center);
         flex-direction: column;
         height: 580px;
+    }
+
+    .feedback {
+        height: 580px;
         width: 100%;
+        background-color: $bg-gray;
+        flex-direction: column;
     }
 }
 </style>
