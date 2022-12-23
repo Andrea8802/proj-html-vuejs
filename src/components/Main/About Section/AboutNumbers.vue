@@ -7,13 +7,19 @@ export default {
 <template>
     <div class="numbers">
         <div class="card">
+
+            <!-- Numeri casuali azienda (di esempio) -->
             <div class="number">
                 {{ Math.floor(Math.random() * (150 - 50 + 1)) + 50 }}
             </div>
 
+
+            <!-- Titolo -->
             <h3>
                 Emplyees
             </h3>
+
+            <!-- Testo -->
             <p>
                 Lorem ipsum dolor sit amet.
             </p>
@@ -21,12 +27,17 @@ export default {
 
         <div class="card">
             <div class="number">
+
+                <!-- Numeri casuali azienda (di esempio) -->
                 {{ Math.floor(Math.random() * (100 - 0 + 1)) + 0 }}
             </div>
 
+            <!-- Titolo -->
             <h3>
                 Partners
             </h3>
+
+            <!-- Testo -->
             <p>
                 Lorem ipsum dolor sit amet.
             </p>
@@ -34,12 +45,17 @@ export default {
 
         <div class="card">
             <div class="number">
+
+                <!-- Numeri casuali azienda (di esempio) -->
                 {{ Math.floor(Math.random() * (200 - 100 + 1)) + 100 }}
             </div>
 
+            <!-- Titolo -->
             <h3>
                 Customers
             </h3>
+
+            <!-- Testo -->
             <p>
                 Lorem ipsum dolor sit amet.
             </p>
@@ -74,9 +90,7 @@ export default {
         }
 
         p {
-            color: $text-color;
             text-align: left;
-            font-size: 14px;
             padding: 0 20px;
         }
     }

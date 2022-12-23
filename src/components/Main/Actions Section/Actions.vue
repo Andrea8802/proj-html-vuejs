@@ -48,7 +48,11 @@ export default {
     },
     methods: {
         itemClicked(item) {
-            this.category.forEach(element => element.active ? element.active = false : "")
+
+            // Ciclo per azzerare tutti gli elementi active
+            this.category.forEach(element => element.active ? element.active = false : "");
+
+            // Assegnazione elemento active
             item.active = true;
         }
     }
@@ -57,24 +61,31 @@ export default {
 </script>
 
 <template>
+
+    <!-- Testo blu -->
     <div class="blue-text">
         WE DO MORE FOR EVERYONE
     </div>
 
+    <!-- Title -->
     <div class="title">
         Actions &
+
+        <!-- Title con bg colorato -->
         <div class="bg-title">
             Project
         </div>
     </div>
 
     <ul>
+        <!-- Lista per switchare le categorie -->
         <li v-for="(item, index) in category" :info="item" :key="index" :class="item.active ? 'item-selected' : ''"
             @click="itemClicked(item)">
             {{ item.name }}
         </li>
     </ul>
 
+    <!-- Lista card -->
     <div class="card-list">
         <ActionCards />
     </div>
@@ -85,16 +96,21 @@ export default {
 @use '../../../styles/partials/variables' as *;
 @use '../../../styles/partials/mixins' as *;
 
+.blue-text {
+    font-size: 12px;
+}
+
 .title {
-    font-weight: bold;
-    font-size: 40px;
     color: white;
     margin: 30px 0;
+    font-size: 45px;
 }
 
 .bg-title {
     background-color: $dark-bg-title;
     color: white;
+    font-size: 45px;
+    padding: 3px 10px
 }
 
 ul {
@@ -104,18 +120,16 @@ ul {
 
 .item-selected {
     background-color: $dark-bg-title;
-    text-decoration: underline;
 }
 
 li {
     list-style: none;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     padding: 5px 10px;
     cursor: pointer;
 
     &:hover {
-
         background-color: $dark-bg-title;
     }
 }

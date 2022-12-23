@@ -6,36 +6,65 @@ export default {
 
 <template>
     <div class="left">
+
+        <!-- Testo blu -->
         <div class="blue-text">
             SEND A MESSAGE
         </div>
 
+
+        <!-- Titolo -->
         <div class="title">
             Get in
+
+            <!-- Titolo con bg colorato -->
             <div class="bg-title">
                 Touch
             </div>
         </div>
 
+        <!-- Testo -->
         <div class="text">
             We will respond to your message as soon as possible
         </div>
 
+        <!-- Form -->
         <form>
+
+            <!-- Nome -->
             <input type="text" name="name" placeholder="Name" required>
 
+            <!-- Email -->
             <input type="email" name="email" placeholder="Email" required>
 
+            <!-- N. Telefono -->
             <input type="tel" name="phone" placeholder="Phone">
 
+            <!-- Lista -->
             <select name="type">
-                <option value="">
+
+                <option value="moreInfo">
                     More info
+                </option>
+
+                <option value="preventive">
+                    Preventive
+                </option>
+
+                <option value="privacy">
+                    Privacy Policy
+                </option>
+
+                <option value="other">
+                    Other
                 </option>
             </select>
 
-            <input type="text" name="message" placeholder="Message" required minlength="10" class="message">
+            <!-- Messaggio -->
+            <input type="text" name="message" placeholder="Message" required minlength="10" maxlength="100"
+                class="message">
 
+            <!-- Tasto per mandare dati -->
             <button type="submit" class="button solid">
                 SEND
             </button>
@@ -52,8 +81,6 @@ export default {
     width: 50%;
 
     .title {
-        font-size: 40px;
-        font-weight: bold;
         color: white;
         margin: 20px 0;
 
@@ -61,11 +88,6 @@ export default {
             background-color: $dark-bg-title;
             color: white;
         }
-    }
-
-    .text {
-        color: $text-color;
-        font-size: 14px;
     }
 
     form {
@@ -83,6 +105,21 @@ export default {
             width: calc(50% - 10px);
             padding: 12px;
             border-radius: 3px;
+
+            &:hover {
+                border: 1px solid gray;
+            }
+
+            &:not(:hover) {
+                border: 1px solid #1d1d23;
+
+            }
+
+            &:focus {
+                outline: none;
+                border: 1px solid gray;
+
+            }
         }
 
         select {

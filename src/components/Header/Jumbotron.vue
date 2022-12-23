@@ -28,11 +28,11 @@ export default {
 
 section {
     background-image: url("../../assets/img/bg-4.jpg");
-    height: calc(100vh - $height-header);
+    height: calc(100vh - 45px);
     background-size: cover;
 
     .background {
-        background-color: rgba($color: black, $alpha: 0.4);
+        background-color: rgba($color: $bg-black, $alpha: 0.5);
         height: 100%;
         width: 100%;
     }

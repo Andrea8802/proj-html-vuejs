@@ -7,6 +7,7 @@ export default {
 <template>
     <section>
         <div class="container">
+
             <!-- Info azienda -->
             <div>
                 <fa icon="fa-solid fa-clock" />
@@ -40,7 +41,7 @@ export default {
 
 section {
     background-color: #21333e;
-    height: $height-header;
+    height: 45px;
     width: 100%;
     font-size: 12px;
     color: $light-text-color;

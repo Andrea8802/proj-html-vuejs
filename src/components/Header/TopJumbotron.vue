@@ -38,7 +38,10 @@ export default {
     },
     methods: {
         itemClicked(item) {
+            // azzerare item active
             this.linkNav.forEach(element => element.active ? element.active = false : "");
+
+            // Assegnare stato active
             item.active = true;
         }
     }
@@ -120,8 +123,6 @@ export default {
 
             .item-selected {
                 color: $primary-color;
-                text-decoration: underline;
-
             }
         }
 

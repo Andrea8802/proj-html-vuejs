@@ -8,23 +8,29 @@ export default {
 <template>
     <div class="middle">
         <div class="text">
+
+            <!-- Testo blu -->
             <div class="blue-text">
                 HUMAN RESOURCES
             </div>
 
+            <!-- Titolo -->
             <h2>
                 Get More Productivity
-                <div class="block"></div>
+                <div class="bar"></div>
             </h2>
 
+            <!-- Testo -->
             <p>
                 Plannig, recruiment and selection process and performance evaluation of employees
             </p>
 
+            <!-- Bottone solido -->
             <a href="#" class="button solid">
                 GET IN TOUCH
             </a>
 
+            <!-- Bottone traparente -->
             <a href="#" class="button trasparent">
                 READ MORE
             </a>
@@ -48,15 +54,17 @@ export default {
         position: relative;
         z-index: 10;
         font-weight: 900;
+        line-height: 110%;
 
-        .block {
+        .bar {
             background-color: $dark-primary-color;
-            width: 105%;
+            width: 95%;
             height: 30px;
             position: absolute;
-            bottom: 15px;
+            bottom: 2px;
             left: 2px;
             z-index: -1;
+            border-radius: 3px;
         }
     }
 

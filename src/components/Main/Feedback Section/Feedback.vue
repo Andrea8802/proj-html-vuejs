@@ -11,25 +11,30 @@ export default {
 </script>
 
 <template>
+
+    <!-- Testo blu -->
     <div class="blue-text">
         CUSTOMERS TESTIMONIALS
     </div>
 
+    <!-- Titolo -->
     <div class="title">
         Trusted
+
+        <!-- Titolo con bg colorato -->
         <div class="bg-title">
             Feedback
         </div>
     </div>
 
+    <!-- Testo -->
     <p>
         We work intensively in search of ideals that can add up in the lives of our customers. This is what moves us and
         we are grateful for the ricognition.
     </p>
 
+    <!-- Lista card -->
     <div class="card-list">
-        <CardFeedback />
-        <CardFeedback />
         <CardFeedback />
     </div>
 </template>
@@ -39,15 +44,10 @@ export default {
 @use '../../../styles/partials/mixins' as *;
 
 .title {
-    font-size: 40px;
-    font-weight: bold;
-    color: $dark-text-color;
     margin: 15px 0;
 }
 
 p {
-    color: $text-color;
-    font-size: 14px;
     width: 40%;
     text-align: center;
 }

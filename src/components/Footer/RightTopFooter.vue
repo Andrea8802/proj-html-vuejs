@@ -9,10 +9,13 @@ export default {
 <template>
 
     <div class="right">
+
+        <!-- Titolo -->
         <h3>
             Example inc.
         </h3>
 
+        <!-- Testo -->
         <div class="text">
             Lorem ipsum dolor sit amet, consectetur adipliscing elit.
         </div>
@@ -21,28 +24,38 @@ export default {
             Praesent diam lacus, dapibus sed imperdiet consectetur.
         </div>
 
+        <!-- Contatti azienda -->
         <div>
             <div class="contact">
                 <span class="icon">
                     <fa icon="fa-solid fa-phone" />
                 </span>
-                +1 (305) 1234-5678
+                <div>
+                    +1 (305) 1234-5678
+                </div>
             </div>
 
             <div class="contact">
                 <span class="icon">
                     <fa icon="fa-solid fa-envelope" />
                 </span>
-                hello@example.com
+                <div>
+                    hello@example.com
+                </div>
+
             </div>
 
             <div class="contact">
                 <span class="icon">
                     <fa icon="fa-solid fa-location-dot" />
                 </span>
-                Main Avenue, 987
+                <div>
+                    Main Avenue, 987
+                </div>
+
             </div>
 
+            <!-- Bottone per la mappa -->
             <a href="#" class="button trasparent">
                 VIEW MAP
             </a>
@@ -57,7 +70,6 @@ export default {
 @use '../../styles/partials/mixins' as *;
 
 .right {
-    widows: 50%;
     margin-bottom: 100px;
 
     h3 {
@@ -67,7 +79,6 @@ export default {
 
     .text {
         color: $light-text-color;
-        font-size: 14px;
         width: 80%;
         margin: 25px 0;
     }
@@ -77,6 +88,11 @@ export default {
         font-size: 15px;
         @include d-flex(flex-start, center);
         gap: 10px;
+
+        & div:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
 
         .icon {
             background-color: $dark-bg-title;

@@ -1,19 +1,67 @@
 <script>
 export default {
-    name: "CardFeedback",
+    name: "CardFeedback"
+
 
 }
 </script>
 
 <template>
     <div class="card">
-        <img src="../../../assets/img/logo-1.png" alt="Logo 1">
 
+        <!-- Immagine -->
+        <img src="src/assets/img/logo-1.png" alt="Logo 1">
+
+
+        <!-- Testo -->
         <p>
             Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis auge justo, in accusan orci rhoncus
             at pellentseque.
         </p>
 
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit.
+        </div>
+
+        <!-- Apici -->
+        <div class="icon">
+            <fa icon="fa-solid fa-quote-right" />
+        </div>
+    </div>
+
+    <div class="card">
+
+        <!-- Immagine -->
+        <img src="src/assets/img/logo-2.png" alt="Logo 2">
+
+        <!-- Testo -->
+        <p>
+            Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis auge justo, in accusan orci rhoncus
+            at pellentseque.
+        </p>
+
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit.
+        </div>
+
+        <!-- Apici -->
+        <div class="icon">
+            <fa icon="fa-solid fa-quote-right" />
+        </div>
+    </div>
+
+    <div class="card">
+
+        <!-- Immagine -->
+        <img src="src/assets/img/logo-3.png" alt="Logo 3">
+
+        <!-- Testo -->
+        <p>
+            Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis auge justo, in accusan orci rhoncus
+            at pellentseque.
+        </p>
+
+        <!-- Apici -->
         <div class="text">
             Lorem ipsum dolor sit amet consectetur adipiscing elit.
         </div>
@@ -37,6 +85,10 @@ export default {
     color: $text-color;
     font-size: 14px;
     position: relative;
+
+    &:hover {
+        box-shadow: 0px 0px 30px rgba($color: $light-text-color, $alpha: 0.5);
+    }
 
     img {
         width: 40%;

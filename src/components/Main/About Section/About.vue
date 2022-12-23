@@ -11,31 +11,40 @@ export default {
 <template>
     <div class="left">
         <div class="content">
+
+            <!-- Testo blu -->
             <div class="blue-text">
                 ABOUT THE NETWORK
             </div>
 
+            <!-- Titolo -->
             <div class="title">
                 <div class="bg-title">
                     The
                 </div>
+
                 <span>
                     Company
                 </span>
             </div>
 
+            <!-- Testo -->
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis diam varius diam
                 ultricies lacinia.
             </p>
 
+            <!-- Numeri azienda -->
             <AboutNumbers />
 
             <div>
+
+                <!-- Bottone solido -->
                 <a href="#" class="button solid">
                     GET IN TOUCH
                 </a>
 
+                <!-- Bottone trasparente -->
                 <a href="#" class="button trasparent">
                     READ MORE
                 </a>
@@ -68,19 +77,11 @@ export default {
         }
 
         .title {
-            color: $dark-text-color;
-            font-weight: bold;
-            font-size: 40px;
             margin: 20px 0;
         }
 
         h3 {
             color: $dark-text-color;
-        }
-
-        p {
-            color: $text-color;
-            font-size: 14px;
         }
 
         .button {

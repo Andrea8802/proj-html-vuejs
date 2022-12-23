@@ -1,11 +1,12 @@
 <script>
 export default {
-    name: "DownFooter"
+    name: "BottomFooter"
 }
 </script>
 
 <template>
 
+    <!-- Testo -->
     <section>
         <div class="text">
             Enjoy the low price. We are tracking any intention of privacy.

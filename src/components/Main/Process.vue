@@ -5,23 +5,30 @@ export default {
 </script>
 
 <template>
+
+    <!-- Testo blu -->
     <div class="blue-text">
         HOW IT WORKS IN PRATICE
     </div>
 
+    <!-- Titolo -->
     <div class="title">
+
+        <!-- Titolo con sfondo -->
         <div class="bg-title">
             Process
         </div>
         Management
     </div>
 
+    <!-- Testo -->
     <p class="text">
         We work with innovative methodolgies to ensure that the entire reformatting process is done from start to finish
         as planned
     </p>
 
 
+    <!-- Barra con i cerchi numerati -->
     <div class="bar">
         <div class="ball-container">
             <div class="ball">
@@ -56,6 +63,7 @@ export default {
 
     </div>
 
+    <!-- Card posizionate con i cerchi numerati -->
     <div class="card-list">
         <div class="card">
 
@@ -125,16 +133,11 @@ export default {
 @use '../../styles/partials/mixins' as *;
 
 .title {
-    font-size: 40px;
-    font-weight: bold;
-    color: $dark-text-color;
     margin: 20px 0;
 }
 
 .text {
-    color: $text-color;
     width: 38%;
-    font-size: 14px;
     text-align: center;
 }
 
@@ -149,15 +152,20 @@ export default {
         width: calc(100% / 6);
 
         .ball {
+            @include d-flex(center, center);
             background-color: $light-primary-color;
             color: $primary-color;
             border-radius: 50%;
-            padding: 10px;
             width: 40px;
             height: 40px;
             font-weight: bold;
             font-size: 18px;
-            margin: auto
+            margin: auto;
+            cursor: pointer;
+
+            &:hover {
+                border: 3px solid $primary-color
+            }
         }
     }
 }
@@ -180,7 +188,6 @@ export default {
         }
 
         p {
-            color: $text-color;
             width: 80%;
             text-align: center;
         }

@@ -1,12 +1,12 @@
 <script>
 import LeftTopFooter from './LeftTopFooter.vue'
 import RightTopFooter from './RightTopFooter.vue'
-import DownFooter from './DownFooter.vue'
+import BottomFooter from './BottomFooter.vue'
 
 export default {
     name: "AppFooter",
     components: {
-        DownFooter,
+        BottomFooter,
         LeftTopFooter,
         RightTopFooter
     }
@@ -21,7 +21,7 @@ export default {
             <RightTopFooter />
         </section>
 
-        <DownFooter />
+        <BottomFooter />
     </footer>
 
 </template>

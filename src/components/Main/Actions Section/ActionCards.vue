@@ -20,8 +20,11 @@ export default {
 <template>
 
     <div class="card" v-for="(text, index) in textCards" :info="text" :key="index">
+
+        <!-- Immagine -->
         <img :src="'src/assets/img/project-' + (index + 1) + '.jpg'" :alt="'image project ' + (index + 1)">
 
+        <!-- Testo -->
         <div class="text">
             {{ text }}
         </div>
@@ -38,11 +41,16 @@ export default {
     height: 280px;
     width: 280px;
     position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 0px 10px gray
+    }
 
     img {
         width: 100%;
         border-radius: 10px;
-        // filter: brightness(0.6);
         filter: opacity(0.5);
     }
 

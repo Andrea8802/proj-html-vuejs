@@ -65,7 +65,7 @@ main {
     .actions {
         flex-direction: column;
         background-color: $bg-black;
-        height: 1100px;
+        height: 1050px;
     }
 
     .process {
